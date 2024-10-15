@@ -5,14 +5,11 @@ import { cookies } from "next/headers";
 
 export const getSession: () => Promise<AuthInterface> = async () => {
   try {
-    const response = await axios.get(
-      `${process.env.API_URL}/api/Profile/take`,
-      {
-        headers: {
-          Cookie: `token=${cookies().get("token")?.value}`,
-        },
+    const response = await axios.get(`${process.env.API_URL}/api/users/get`, {
+      headers: {
+        Cookie: `token=${cookies().get("token")?.value}`,
       },
-    );
+    });
 
     return {
       auth: response.data.status,

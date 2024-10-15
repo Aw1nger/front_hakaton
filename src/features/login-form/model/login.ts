@@ -2,7 +2,7 @@ import { usePost } from "@/shared/hooks/use-post/usePost";
 import { z } from "zod";
 
 export const loginSchema = z.object({
-  email: z.string().email(),
+  email: z.string().email("Введите корркетный email"),
   password: z
     .string()
     .min(8, "Пароль должен содержать не менее 8 символов")
@@ -14,7 +14,7 @@ export const loginResponseSchema = z.string();
 
 export const useLogin = () => {
   return usePost<z.infer<typeof loginSchema>>(
-    "/Authorization/login",
+    "/api/users/login",
     loginResponseSchema,
   );
 };

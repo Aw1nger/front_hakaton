@@ -16,7 +16,7 @@ jobs:
         options: >-
           --privileged
           --name docker
-          --network hos
+          --network host
 
     steps:
       - name: Checkout code

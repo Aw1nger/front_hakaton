@@ -10,15 +10,18 @@ jobs:
   build:
     runs-on: self-hosted
 
-    services:
-      docker:
-        image: docker:latest
-        options: >-
-          --privileged
-          --name docker
-          --network host
+    # services:
+    #   docker:
+    #     image: docker:latest
+    #     options: >-
+    #       --privileged
+    #       --name docker
+    #       --network host
 
     steps:
+      - name: Whoami
+        uses: whoami
+    
       - name: Checkout code
         uses: actions/checkout@v2
 

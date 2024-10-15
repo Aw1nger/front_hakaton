@@ -7,12 +7,12 @@ const Page = () => {
         <div className="text-wrap text-center text-4xl font-bold md:text-start">
           Название специальности
         </div>
-        <div className="text-wrap break-all md:px-0 px-[10px] pt-[50px] indent-6 text-xl">
+        <div className="text-wrap break-all px-[10px] pt-[50px] indent-6 text-xl md:px-0">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum
           impedit itaque officia quaerat? Cum distinctio dolor ex facere ipsam,
           labore minima neque quas quibusdam quo rerum sapiente tempore vero?s
         </div>
-        <div className="flex flex-wrap justify-between mt-[50px] px-[10px] lg:px-0">
+        <div className="mt-[50px] flex flex-wrap justify-between px-[10px] lg:px-0">
           <CardSpeciality
             title={"Школа"}
             desc={

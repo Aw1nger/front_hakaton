@@ -1,6 +1,10 @@
 export const navbarLinks = [
   {
     title: "Главная",
-    href: "/",
+    href: "/main",
   },
+  {
+    title: "Описание специальностей",
+    href: "/cards"
+  }
 ];

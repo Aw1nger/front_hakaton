@@ -5,7 +5,7 @@ import { cookies } from "next/headers";
 export async function Logout(): Promise<{ message: string }> {
   try {
     const response = await axios.post(
-      "/api/logout",
+      "/api/users/logout",
       {},
       { withCredentials: true },
     );

@@ -11,8 +11,6 @@ interface User {
   id: number;
   firstname: string;
   lastname: string;
-  avatar: string;
-  username: string;
   email: string;
   role: string;
 }

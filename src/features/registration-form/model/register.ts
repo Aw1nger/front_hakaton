@@ -20,7 +20,7 @@ const responseSchema = z.object({
 
 export const useReg = () => {
   return usePost<z.infer<typeof registerSchema>>(
-    "api/register",
+    "/api/users/register",
     responseSchema,
   );
 };

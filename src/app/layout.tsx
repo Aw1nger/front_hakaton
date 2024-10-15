@@ -16,8 +16,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Home | NeltoID",
-  description: "NektoID by Nekto-Z",
+  title: "Home | ITCube Hakaton",
+  description: "Наша прекрасная страничка регистрации",
 };
 
 export default function RootLayout({

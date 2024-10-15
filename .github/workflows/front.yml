@@ -16,4 +16,4 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t front --tag latest .
+          docker build -t front .

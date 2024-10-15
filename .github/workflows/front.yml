@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: whoami
+        run: whoami  
+
+      - name: Build Docker image
+        run: docker build -t front .
